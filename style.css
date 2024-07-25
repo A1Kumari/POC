@@ -1,8 +1,48 @@
-*{
-    
+* {
+    box-sizing: border-box;
 }
-body{
+
+body {
     padding: 50px;
     margin: 50px;
-    background-color: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+    background-image: linear-gradient(to right top, #9cf8f0, #b5f8ff, #d6f8ff, #f1f9ff, #fefefe);
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+h1 {
+    text-align: center;
+}
+
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.radio-group label {
+    display: inline-block;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radio-group input[type="radio"]:disabled + label {
+    color: grey;
+    font-weight: normal;
+}
+
+.radio-group input[type="radio"]:not(:disabled) + label {
+    color: black;
+    font-weight: bold;
 }
